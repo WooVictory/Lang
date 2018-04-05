@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_top"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#ffffff" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="후기 작성"
+            android:textColor="#111111"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
+        <View
+            android:id="@+id/tab_line_top"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BCBCBC"
+            android:layout_alignBottom="@+id/toolbar"
+            />
+        <ImageView
+            android:id="@+id/write_review"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/complete"
+            />
+    </RelativeLayout>
+    <!--앱바-->
+
+    <RelativeLayout
+        android:id="@+id/review_write_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_top"
+        android:background="#ffffff">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/review_writer_profile_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/profile_default"
+            />
+        <TextView
+            android:id="@+id/lounge_update_writer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/review_writer_profile_img"
+            android:text="Kang Daniel"
+            android:textColor="#111111"
+            android:textSize="18dp"/>
+        <ScrollView
+            android:id="@+id/review_context"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@+id/review_writer_profile_img"
+            android:layout_alignParentStart="true">
+            <EditText
+                android:id="@+id/review_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="14dp"
+                android:background="@null"
+                android:gravity="start"
+                android:hint="모임은 어떠셨나요?"
+                android:textSize="16dp"
+                />
+        </ScrollView>
+
+        <RatingBar
+            android:id="@+id/review_write_rating"
+            style="@style/customRatingBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/review_context"
+            android:layout_margin="16dp"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:rating="0.0"
+            android:stepSize="0.5"
+            />
+        <TextView
+            android:id="@+id/review_write_rating_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/review_write_rating"
+            android:layout_alignTop="@+id/review_write_rating"
+            android:textSize="18sp"
+            android:textColor="#111111"
+            />
+    </RelativeLayout>
+
+    <!--<LinearLayout
+        android:id="@+id/lounge_update_image_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lounge_update_box"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+    </LinearLayout>-->
+
+    <HorizontalScrollView
+        android:id="@+id/review_write_horiozontal_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/review_write_box">
+        <LinearLayout
+            android:id="@+id/review_write_image_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"/>
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"/>
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"/>
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"/>
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"/>
+            <ImageView
+                android:id="@+id/img6"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"/>
+            <ImageView
+                android:id="@+id/img7"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"/>
+            <ImageView
+                android:id="@+id/img8"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"/>
+            <ImageView
+                android:id="@+id/img9"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"/>
+            <ImageView
+                android:id="@+id/img10"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:id="@+id/review_write_gallery"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/review_write_gallery"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

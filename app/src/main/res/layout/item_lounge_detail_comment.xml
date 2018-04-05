@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/lounge_comment_writer_pic"
+            android:src="@drawable/profile_default"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            />
+        <RelativeLayout
+            android:id="@+id/lounge_comment_info_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/lounge_comment_writer_pic">
+
+            <TextView
+                android:id="@+id/lounge_comment_writer_name"
+                android:text="서정최"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textSize="14dp"
+                android:textColor="#111111"
+                />
+
+            <TextView
+                android:id="@+id/lounge_comment_uploaded_time"
+                android:text="1분전"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:textSize="10dp"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/lounge_comment_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/lounge_comment_writer_pic"
+            android:layout_below="@+id/lounge_comment_info_box"
+            android:textColor="#707070"
+            android:text="집가구싶다...ㅎㅎㅎ."
+            android:layout_marginBottom="8dp"
+            />
+
+        <View
+            android:layout_below="@+id/lounge_comment_text"
+            android:layout_toRightOf="@id/lounge_comment_writer_pic"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#bcbcbc"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

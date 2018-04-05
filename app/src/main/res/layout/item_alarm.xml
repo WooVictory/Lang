@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/alarm_profile_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/profile_default"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="16dp"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/alarm_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#111111"
+        android:layout_centerVertical="true"
+        android:layout_margin="16dp"
+        android:layout_toRightOf="@+id/alarm_profile_img"
+        android:text="한국어 모임에서 다음과 같은 ."
+        />
+    <View
+        android:id="@+id/gapline"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#BCBCBC"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/alarm_content"
+        android:layout_alignStart="@+id/alarm_content"
+        />
+    <TextView
+        android:id="@+id/alarm_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gapline"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/gapline"
+        android:textColor="#AD71F8"
+        android:text="방금"
+        android:textSize="14dp"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/profile_default"
+            android:layout_alignBottom="@+id/view2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="17dp" />
+
+        <TextView
+            android:id="@+id/chatting_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/img"
+            android:layout_alignStart="@+id/img"
+            android:layout_marginLeft="96dp"
+            android:layout_marginStart="96dp"
+            android:text="jo hee"
+            android:textColor="#111111"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/chatting_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:text="11:47 pm"
+            android:textColor="#111111"
+
+            android:textSize="10dp" />
+
+        <TextView
+            android:textColor="#111111"
+            android:id="@+id/chatting_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi~~~Hi~~~Hi~~~"
+            android:textSize="14dp"
+            android:layout_above="@+id/view2"
+            android:layout_alignLeft="@+id/chatting_name"
+            android:layout_alignStart="@+id/chatting_name" />
+
+        <TextView
+            android:id="@+id/chatting_count"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignRight="@+id/chatting_time"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/chatting_circle"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="35dp"
+            android:layout_height="1dp"
+            android:background="#efefef"
+            android:layout_below="@+id/chatting_count"
+            android:layout_toRightOf="@+id/img"
+            android:layout_toEndOf="@+id/img"
+            android:id="@+id/view2" />
+    </RelativeLayout>
+</RelativeLayout>

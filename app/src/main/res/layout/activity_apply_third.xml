@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/apply_complete_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FCFCFC"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="모임 신청"
+            android:textSize="16dp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="#111111"
+            />
+        <View
+            android:id="@+id/tab_line_top"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BCBCBC"
+            android:layout_alignBottom="@+id/toolbar"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/apply_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="모임신청이 완료되었습니다."
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:textColor="#600DC7"
+        android:textSize="16dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/apply_complete"
+        android:layout_above="@+id/apply_complete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        />
+    <TextView
+        android:id="@+id/apply_complete_exp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="모임 승인은 주최자에 따라 1~3일정도 소요됩니다.\n승인이 된 후 모임에 참석할 수 있습니다."
+        android:gravity="center"
+        android:textColor="#707070"
+        android:textSize="14sp"
+        android:layout_below="@+id/apply_complete"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#FCFCFC"
+            android:layout_centerHorizontal="true"
+            />
+        <View
+            android:id="@+id/toolbar_line_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BCBCBC"
+            />
+        <ImageButton
+            android:id="@+id/apply_completebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/apply_confirm"/>
+    </RelativeLayout>
+</RelativeLayout>

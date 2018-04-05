@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_top"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:background="#FCFCFC"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="프로필 수정"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#111111"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+            <ImageView
+                android:id="@+id/profile_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile_edit_complete"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="4dp"/>
+        <View
+            android:id="@+id/tab_line_top"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BCBCBC"
+            android:layout_alignBottom="@+id/toolbar"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_user_change_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/profile_default" />
+
+        <TextView
+
+            android:id="@+id/profile_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_user_change_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:text="프로필 사진 수정"
+            android:textColor="#680fd6"
+            android:textSize="12dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/profile_user_change_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_change"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/edit"
+            android:hint="lang"
+            android:paddingBottom="8dp"
+            android:paddingLeft="14dp"
+            android:paddingTop="8dp"
+            android:textColor="#707070"
+            android:textColorHint="#707070" />
+
+        <EditText
+            android:id="@+id/profile_user_change_about"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/profile_user_change_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/edit"
+            android:hint="About me"
+            android:gravity="top"
+            android:paddingBottom="8dp"
+            android:paddingLeft="14dp"
+            android:paddingTop="8dp"
+            android:textColor="#707070"
+            android:textColorHint="#707070" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

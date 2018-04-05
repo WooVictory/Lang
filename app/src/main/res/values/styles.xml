@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+    <style name="customRatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="android:progressDrawable">@drawable/meeting_review_star</item>
+        <item name="android:minHeight">14dp</item>
+        <item name="android:maxHeight">14dp</item>
+    </style>
+    <style name="customRatingBar2" parent="Widget.AppCompat.RatingBar">
+        <item name="android:progressDrawable">@drawable/meeting_write_star</item>
+        <item name="android:minHeight">24dp</item>
+        <item name="android:maxHeight">24dp</item>
+    </style>
+
+    <style name="SpinnerTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/lounge_more</item>
+    </style>
+
+    <style name="my_switch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">#680FD6</item>
+        <item name="android:colorForeground">#CCCCCC</item>
+    </style>
+
+</resources>

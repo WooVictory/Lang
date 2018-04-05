@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/home_filter_on"
+        android:title="@string/app_name"
+        android:icon="@drawable/home_filter_on"
+        app:showAsAction="always"/>
+    <item android:id="@+id/home_filter_off"
+        android:title="@string/app_name"
+        android:icon="@drawable/home_filter_off"
+        app:showAsAction="always"/>
+
+
+</menu>

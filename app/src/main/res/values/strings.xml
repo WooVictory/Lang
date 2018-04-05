@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Lang</string>
+    <string name="action_home_detail">모임 상세</string>
+    <string name="action_home_review">모임 후기</string>
+    <string name="action_home_apply">모임 신청</string>
+
+    <string name="facebook_app_id">182807832306810</string>
+    <string name="kakao_app_key">c8922dca3d10da9ec9c736771b00759b</string>
+
+    <string name="review_context_ex1">바보같이 아쉬움 많은 노래가 하늘에 닿기를 눈물 속에 밤새운 내 기도가 마음에 닿기를 어렸어 내가 이럴 줄은 몰랐어 당연한 거라 그땐 생각했었어 내게 남겨준 미소가 아직도 이 가슴속에 남아있어 솔직히 나 아직은 받는 사랑이 필요한 가봐 홀로 남은 시간이</string>
+    <string name="review_context_ex2">너와 나의 입술이 점점 느껴지는 이 순간 속에 뜨거운 공기 온몸에 전율이 와 이제 너와 내가 써 내릴 Story I do not know why 나도 모르게 더 빠져들어가 숨 막히게 Baby I do not know why 지금 이 순간 멈출 수</string>
+    <string name="review_context_ex3">Time spent with you(Pick me Pick me Pick me)Goes too fast, I get nervous(Pick me Pick me Pick me)Stop, Hold me Hold meUntil the end, Pick me Pick meYou’re so pretty to me, I wonder if it’s a dreamI’m so scared Please remember this moment, tonight Tonight, the star is me, it’s me, it’s me Only waited for you, it’s me, it’s me, it’s me The person to steal your heart</string>
+</resources>

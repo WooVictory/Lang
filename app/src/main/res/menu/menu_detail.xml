@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/home_share"
+        android:title="@string/action_home_detail"
+        android:icon="@drawable/home_share"
+        app:showAsAction="always"/>
+    <item android:id="@+id/home_heart_off"
+        android:title="@string/app_name"
+        android:icon="@drawable/home_like_off"
+        app:showAsAction="always"/>
+    <item android:id="@+id/home_heart_on"
+        android:title="@string/app_name"
+        android:icon="@drawable/home_like_on"
+        app:showAsAction="always"/>
+</menu>

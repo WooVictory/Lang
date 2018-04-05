@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="com.sopt.lang.Meeting.MeetingCreate.MeetingCreateActivity2">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_box"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#fcfcfc"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/meeting_cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="모임 개설"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#111111"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+        <View
+            android:id="@+id/tab_line_top"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BCBCBC"
+            android:layout_alignBottom="@+id/toolbar"
+            />
+    </RelativeLayout>
+    
+    <ImageView
+        android:layout_below="@+id/toolbar_box"
+        android:layout_above="@+id/relative_toolbar_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/apply_complete_background"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/meeting_apply_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/apply_complete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="모임개설이 완료되었습니다."
+        android:layout_below="@id/meeting_apply_complete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#680FD6"/>
+
+    <RelativeLayout
+        android:id="@+id/relative_toolbar_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#FCFCFC"
+            android:layout_centerHorizontal="true"
+            />
+        <View
+            android:id="@+id/tab_line_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BCBCBC"
+            />
+
+        <ImageButton
+            android:id="@+id/meeting5_create_confirm_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/apply_confirm"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="com.sopt.lang.Meeting.MeetingCreate.MeetingCreateActivity1">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_box"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#fcfcfc"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/meeting_cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:text="취소"
+                android:textSize="16dp"
+                android:textColor="#111111"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="모임 개설"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#111111"
+                />
+        <View
+            android:id="@+id/tab_line_top"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BCBCBC"
+            android:layout_alignBottom="@+id/toolbar"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar_box"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#680FD6"
+            android:text="1/4 단계"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#111111"
+            android:text="모임대표 이미지를\n선택해주세요."/>
+
+
+        <ImageView
+            android:id="@+id/meeting_create_photo"
+            android:layout_marginTop="16dp"
+            android:layout_width="360dp"
+            android:layout_height="240dp"
+            android:layout_gravity="center"
+            android:src="@drawable/meetingcreate_photo"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_toolbar_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#FCFCFC"
+            android:layout_centerHorizontal="true"
+            />
+        <View
+            android:id="@+id/tab_line_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BCBCBC"
+            />
+
+        <ImageButton
+            android:id="@+id/meeting_create_next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/apply_next_off"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sopt.lang.OrganizerPage.OrganizerPageDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/action_bar">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FCFCFC"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="참여자 관리"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="#111111"
+            />
+        <View
+            android:id="@+id/tab_line_top"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BCBCBC"
+            android:layout_alignBottom="@+id/toolbar"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_bar">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_img_awaiter"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/profile_default"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:id="@+id/name_awaiter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#111111"
+            android:layout_alignTop="@+id/profile_img_awaiter"
+            android:layout_marginStart="30dp"
+            android:layout_toRightOf="@+id/profile_img_awaiter"
+            android:text="Dua Lipa"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_awaiter"
+            android:layout_toEndOf="@+id/profile_img_awaiter">
+            <TextView
+                android:id="@+id/my_lang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profil_layout"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="4dp"
+                android:textColor="#707070"
+                android:textSize="10dp"
+                tools:text="한국어" />
+
+            <ImageView
+                android:id="@+id/profile_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profil_layout"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/my_lang"
+                android:src="@drawable/arrow" />
+
+            <TextView
+                android:id="@+id/hope_lang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profil_layout"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/profile_arrow"
+                android:textColor="#707070"
+                android:textSize="10dp"
+                tools:text="English" />
+        </RelativeLayout>
+        <!--<TextView-->
+        <!--android:id="@+id/my_language"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textColor="#707070"-->
+        <!--android:layout_below="@+id/name_awaiter"-->
+        <!--android:layout_alignLeft="@+id/name_awaiter"-->
+        <!--android:layout_toRightOf="@+id/profile_img_awaiter"-->
+        <!--android:layout_marginTop="4dp"-->
+        <!--android:text="한국어"-->
+        <!--/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/hope_language"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textColor="#707070"-->
+        <!--android:layout_below="@+id/name_awaiter"-->
+        <!--android:layout_alignLeft="@+id/name_awaiter"-->
+        <!--android:layout_toRightOf="@+id/profile_img_awaiter"-->
+        <!--android:layout_marginTop="4dp"-->
+        <!--android:text="English"-->
+        <!--/>-->
+
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/gapline"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#BCBCBC"
+        android:layout_below="@+id/pro"
+        android:layout_marginTop="16dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/awaiter_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gapline"
+        android:layout_above="@+id/tab_bar_bottom"
+        >
+        <TextView
+            android:id="@+id/introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#111111"
+            android:layout_margin="16dp"
+            android:text="소개"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/introduce_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/introduce"
+            android:layout_marginEnd="16dp"
+            android:padding="16dp"
+            android:layout_below="@+id/introduce"
+            android:background="@drawable/awaiter_introduce_border"
+            android:text="저를 넣어주세용"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_bar_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#FCFCFC"
+            android:layout_centerHorizontal="true"
+            />
+        <View
+            android:id="@+id/toolbar_line_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BCBCBC"
+            />
+        <ImageButton
+            android:id="@+id/acceptbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/meeting_organizer_accept"/>
+        <ImageButton
+            android:id="@+id/denybtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/acceptbtn"
+            android:layout_marginEnd="16dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/meeting_organizer_deny"/>
+    </RelativeLayout>
+</RelativeLayout>

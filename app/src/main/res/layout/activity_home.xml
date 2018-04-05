@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FCFCFC"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+             <android.support.v7.widget.Toolbar
+                 android:id="@+id/home_toolbar"
+                 android:layout_width="match_parent"
+                 android:layout_height="?attr/actionBarSize"
+                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+            <ImageView
+                android:id="@+id/home_filter"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/home_filter_btn"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="6dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/lang_logo" />
+            <ImageButton
+                android:id="@+id/home_add_btn"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/home_add"
+                android:background="#fcfcfc"/>
+            <View
+                android:id="@+id/tab_line_top"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BCBCBC"
+                android:layout_alignBottom="@+id/home_toolbar"
+                />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/filter_bar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/appBar"
+        android:background="#FCFCFC"
+        android:visibility="gone">
+        <ImageButton
+            android:id="@+id/all_showing"
+            android:layout_width="65dp"
+            android:layout_height="26dp"
+            android:src="@drawable/home_filter_all_btn"
+            android:layout_marginLeft="27dp"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            />
+        <ImageButton
+            android:id="@+id/lang_exchange"
+            android:layout_width="82dp"
+            android:layout_height="26dp"
+            android:layout_toRightOf="@+id/all_showing"
+            android:src="@drawable/home_lagnuage_exchange_btn"
+            android:layout_marginLeft="47dp"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"/>
+        <ImageButton
+            android:id="@+id/party"
+            android:layout_width="65dp"
+            android:layout_height="26dp"
+            android:src="@drawable/home_filter_party_btn"
+            android:layout_marginLeft="47dp"
+            android:layout_toRightOf="@id/lang_exchange"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tab_bottom"
+        android:layout_below="@+id/filter_bar"
+        android:background="#FFFFFF"/>
+
+
+    <LinearLayout
+        android:id="@+id/tab_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/tab_line_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BCBCBC" />
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="#FCFCFC"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="#AD71F8"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
