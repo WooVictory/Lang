@@ -43,7 +43,6 @@ class JoinNextActivity : AppCompatActivity() {
         networkService = GlobalApplication.instance!!.networkService
         SharedPreferencesService.instance!!.load(this)
 
-
         my = findViewById<View>(R.id.my_language_layout) as RelativeLayout
         wish = findViewById<View>(R.id.wish_language_layout) as RelativeLayout
 

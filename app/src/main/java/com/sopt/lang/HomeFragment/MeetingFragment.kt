@@ -68,7 +68,6 @@ class MeetingFragment : Fragment(), View.OnClickListener {
         networkService = GlobalApplication.instance!!.networkService
         SharedPreferencesService.instance!!.load(context)
         // 네트워크 서비스 초기화
-
         if(this.arguments != null) {
             var bundle: Bundle = this.arguments
             meeting_type = bundle.getInt("type")
@@ -86,7 +85,6 @@ class MeetingFragment : Fragment(), View.OnClickListener {
     override fun onCreateOptionsMenu(menu: Menu?, inflater: MenuInflater?) {
         inflater!!.inflate(R.menu.home_add, menu) // 메뉴 갖다 붙임
         super.onCreateOptionsMenu(menu, inflater)
-
     }
     fun  mMeetingList() {
         val meetingListResponse = networkService!!.getMeetingList(SharedPreferencesService.instance!!.getPrefStringData("token", "")
