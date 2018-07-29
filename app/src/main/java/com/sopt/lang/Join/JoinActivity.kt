@@ -16,7 +16,7 @@ import java.io.InputStreamReader
 
 class JoinActivity : AppCompatActivity() {
     internal lateinit var all_check: ImageView
-    internal lateinit  var tos_check: ImageView
+    internal lateinit var tos_check: ImageView
     internal lateinit var privacy_check: ImageView
     internal lateinit var join_next: ImageView
     internal lateinit var privacy_down: ImageView

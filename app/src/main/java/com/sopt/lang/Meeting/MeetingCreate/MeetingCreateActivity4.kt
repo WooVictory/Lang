@@ -17,6 +17,7 @@ import com.sopt.lang.Login.kakao.GlobalApplication
 import com.sopt.lang.Network.Base.BaseModel
 import com.sopt.lang.Network.NetworkService
 import com.sopt.lang.R
+import com.sopt.lang.R.id.meeting4_question
 import com.sopt.lang.SharedPreferencesService
 import kotlinx.android.synthetic.main.activity_meeting_create4.*
 import okhttp3.MediaType
